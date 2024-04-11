@@ -1,7 +1,5 @@
-/** @type {import('prettier').Config & import('prettier-plugin-tailwindcss').options} */
 const config = {
-  printWidth: 150,
-  plugins: ["prettier-plugin-tailwindcss"],
+  extends: ["@repo/prettier-config/base.mjs"],
 };
 
 export default config;

@@ -11,6 +11,9 @@ importers:
       '@repo/eslint-config':
         specifier: workspace:*
         version: link:packages/eslint-config
+      '@repo/prettier-config':
+        specifier: workspace:*
+        version: link:packages/prettier-config
       '@repo/typescript-config':
         specifier: workspace:*
         version: link:packages/typescript-config
@@ -63,6 +66,15 @@ importers:
         specifier: ^5.3.3
         version: 5.3.3
 
+  packages/prettier-config:
+    devDependencies:
+      prettier:
+        specifier: ^3.2.5
+        version: 3.2.5
+      prettier-plugin-tailwindcss:
+        specifier: ^0.5.13
+        version: 0.5.13(prettier@3.2.5)
+
   packages/typescript-config: {}
 
   services/application:
@@ -98,6 +110,9 @@ importers:
       '@repo/eslint-config':
         specifier: workspace:*
         version: link:../../packages/eslint-config
+      '@repo/prettier-config':
+        specifier: workspace:*
+        version: link:../../packages/prettier-config
       '@repo/typescript-config':
         specifier: workspace:*
         version: link:../../packages/typescript-config
