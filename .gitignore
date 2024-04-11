@@ -27,6 +27,9 @@ out/
 build
 dist
 
+# Local DB
+**/*.sqlite
+
 
 # Debug
 npm-debug.log*

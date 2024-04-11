@@ -1,81 +1,44 @@
-# Turborepo starter
+# Bitcoint Bot
 
-This is an official starter Turborepo.
+A bot to manage bitcoin tades
 
-## Using this example
+## Overview
 
-Run the following command:
+This repository consist of two main services
 
-```sh
-npx create-turbo@latest
+1. The bot - responsible for managing bitcoin's sma and trades
+2. The application - responsible for managing accounts and displaying data to the user
+
+There are few packages that are shared between the app for now it's just configuration.
+
+## How to use
+
+Make sure you have both [Bun.js](https://bun.sh/) and [Node.js](https://nodejs.org/en) installed. The bot runs on bunjs and the applicaton uses [Next.js](https://nextjs.org/) which requires on node.
+
+### Turborepo
+
+Because this repo is a monorepo using [Turborepo](https://turbo.build/repo) combined with [pnpm](https://pnpm.io/) to manage the services and packages, It would be helpful to read up on how each of these tools are used.
+
+### Getting Started
+
+Clone the repository:
+
+```bash
+  git clone https://github.com/Jdecristi/bitcoin-bot.git
 ```
 
-## What's inside?
+Install dependancies:
 
-This Turborepo includes the following packages/apps:
-
-### Apps and Packages
-
-- `docs`: a [Next.js](https://nextjs.org/) app
-- `web`: another [Next.js](https://nextjs.org/) app
-- `@repo/ui`: a stub React component library shared by both `web` and `docs` applications
-- `@repo/eslint-config`: `eslint` configurations (includes `eslint-config-next` and `eslint-config-prettier`)
-- `@repo/typescript-config`: `tsconfig.json`s used throughout the monorepo
-
-Each package/app is 100% [TypeScript](https://www.typescriptlang.org/).
-
-### Utilities
-
-This Turborepo has some additional tools already setup for you:
-
-- [TypeScript](https://www.typescriptlang.org/) for static type checking
-- [ESLint](https://eslint.org/) for code linting
-- [Prettier](https://prettier.io) for code formatting
-
-### Build
-
-To build all apps and packages, run the following command:
-
-```
-cd my-turborepo
-pnpm build
+```bash
+pnpm install
 ```
 
-### Develop
+Push DB Schema
 
-To develop all apps and packages, run the following command:
-
-```
-cd my-turborepo
-pnpm dev
+```bash
+pnpm db:push
 ```
 
-### Remote Caching
+## Contributions
 
-Turborepo can use a technique known as [Remote Caching](https://turbo.build/repo/docs/core-concepts/remote-caching) to share cache artifacts across machines, enabling you to share build caches with your team and CI/CD pipelines.
-
-By default, Turborepo will cache locally. To enable Remote Caching you will need an account with Vercel. If you don't have an account you can [create one](https://vercel.com/signup), then enter the following commands:
-
-```
-cd my-turborepo
-npx turbo login
-```
-
-This will authenticate the Turborepo CLI with your [Vercel account](https://vercel.com/docs/concepts/personal-accounts/overview).
-
-Next, you can link your Turborepo to your Remote Cache by running the following command from the root of your Turborepo:
-
-```
-npx turbo link
-```
-
-## Useful Links
-
-Learn more about the power of Turborepo:
-
-- [Tasks](https://turbo.build/repo/docs/core-concepts/monorepos/running-tasks)
-- [Caching](https://turbo.build/repo/docs/core-concepts/caching)
-- [Remote Caching](https://turbo.build/repo/docs/core-concepts/remote-caching)
-- [Filtering](https://turbo.build/repo/docs/core-concepts/monorepos/filtering)
-- [Configuration Options](https://turbo.build/repo/docs/reference/configuration)
-- [CLI Usage](https://turbo.build/repo/docs/reference/command-line-reference)
+This code base is not open for contributions as this is a personal project for my own personal development. However, this code is still open for anyone to see. I don't plan to hide any algorithms or code for transparencies sake.
